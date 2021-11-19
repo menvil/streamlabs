@@ -116,7 +116,7 @@ class TwitchController extends Controller
                 $lowerStream = $row;
             }
 
-            if((int)$lowerStream->viewer_count < (int)$row->viewer_count) {
+            if((int)$lowerStream->viewer_count > (int)$row->viewer_count) {
                 $lowerStream = $row;
             }
         }
